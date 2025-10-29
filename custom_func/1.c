@@ -1,4 +1,18 @@
 // @ mines 표에 맞춰서 채워넣기
+/*
+	field
+	0 1 0 1
+	0 0 0 1
+	1 1 1 0
+	0 1 1 1
+
+	mines
+	[][][][]
+	[][][][]
+	[][][][]
+	[][][][]
+*/
+
 
 #include <stdio.h>
 int chkover(int w, int h, int j, int i);
@@ -24,6 +38,7 @@ int main()
 			}
 		}
 	}
+
 	for (int y = 0; y < h; y++)
 	{
 		for (int x = 0; x < w; x++)
@@ -33,13 +48,7 @@ int main()
 		printf("\n");
 	}
 }
-/*
-	field
-	0 1 0 1
-	0 0 0 1
-	1 1 1 0
-	0 1 1 1
-*/
+
 
 int chkover(int w, int h, int j, int i)
 {
