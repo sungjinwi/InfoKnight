@@ -1,0 +1,12 @@
+create table EMP_TBL (
+	EMPNO INT,
+	SAL INT
+);
+
+insert into EMP_TBL(EMPNO, SAL) values
+(100, 1500),
+(200, 3000),
+(300, 2000);
+
+SELECT COUNT(*) FROM EMP_TBL WHERE EMPNO > 100 AND SAL >= 3000 OR EMPNO =
+200;
